@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Star Wars Game</title>
+
+  </head>
+
+  <body>
+
+    <!-- The html is done for us. -->
+    <h1>Attack the enemy!</h1>
+    <h2>Choose your power:</h2>
+
+    <button id="enemy1">Boba Fett</button>
+    <button id="enemy2">Probe Droid</button>
+    <button id="enemy3">AT-ST Walker</button>
+
+
+
+
+    <button id="power1">Power1</button>
+    <button id="power2">Power2</button>
+    <button id="power3">Power3</button>
+
+    <br>
+
+    <div> You attacked with:
+      <span id="power"></span>
+    </div>
+
+    <br>
+
+    MY HEALTH<div id="my-health"></div>
+
+    <br>
+
+    MY HEALTH<div id="enemy-health"></div>
+
+    <br>
+
+    RANDOM NUMBER: <div id="rand-num"></div>
+
+    <br>
+
+    ENEMY IMAGE: <div id="enemy-image"></div>
+
+    <br>
+
+    MY ATTACK: <div id="my-attack"></div>
+
+    <br>
+
+    ENEMY ATTACK: <div id="enemy-attack"></div>
+
+    <br>
+
+    <div>
+      <h3>Wins: </h3>
+      <span id="wins"></span>
+    </div>
+
+    <div>
+      <h3>Losses: </h3>
+      <span id="losses"></span>
+    </div>
+
+    <div>
+      <h3>Heads chosen: </h3>
+      <span id="heads-chosen"></span>
+    </div>
+
+    <div>
+      <h3>Tails chosen: </h3>
+      <span id="tails-chosen"></span>
+    </div>
+
+    <div id="win-lose"></div>
+
+    <div id="win-loss-tracker"></div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+  <script type="text/javascript">
+
+    var headsCount = 0;
+    var tailsCount = 0;
+    var power3Count = 0;
+    var wins = 0;
+    var losses = 0;
+
+    var myHealth = 100;
+    var enemy1Health = 100;
+    var enemy2Health = 100;
+    var enemy3Health = 100;
+
+    var enemiesKilled = 0;
+
+    function isGameOver(){
+      if (randomNumber === 0) {
+
+      }
+    }
+
+    function isEnemyDead(){
+
+    }
+
+    function attackEnemy(){
+
+    }
+
+    function flipThatCoin(result) {
+
+      var randomNumber = Math.floor(Math.random()*3);
+
+      var enemyAttack = Math.floor(Math.random()*20);
+
+      var myAttack = Math.floor(Math.random()*40);
+
+
+      if (randomNumber === 0) {
+          $("#enemy-image").html("<img src='assets/images/at-st.gif'>");
+           $("#rand-num").html(randomNumber);
+        } else if (randomNumber === 1) {
+          $("#enemy-image").html("<img src='assets/images/boba-fett.gif'>");
+           $("#rand-num").html(randomNumber);
+        } else if (randomNumber === 2) {
+          $("#enemy-image").html("<img src='assets/images/probe.gif'>");
+           $("#rand-num").html(randomNumber);
+        }
+
+
+      if (result == randomNumber) {
+            wins++;
+            $("#win-lose").html("<h2>Winner!</h2>");
+            $("#wins").html(wins);
+          } else {
+            losses++;
+            $("#win-lose").html("<h2>Loser!</h2>");
+            $("#losses").html(losses);
+          }
+   }
+        $("#power1").on("click", function() {
+          headsCount++;
+        $("#power1-chosen").html(headsCount);
+        $("#guess").html("<b>Power 1</b>");
+
+        flipThatCoin(0);
+    });
+
+
+        $("#power2").on("click", function() {
+        tailsCount++;
+        $("#power2-chosen").html(tailsCount);
+        $("#guess").html("<b>Power 2</b>");
+  
+        flipThatCoin(1);
+    });
+
+
+        $("#power3").on("click", function() {
+        power3Count++;
+        $("#power3-chosen").html(power3Count);
+        $("#guess").html("<b>Power 3</b>");
+       
+        flipThatCoin(2);
+    });
+
+
+
+// CHOOSING AN ENEMY
+
+        $("#enemy1").on("click", function() {
+        power3Count++;
+        $("#enemy-image").html(power3Count);
+        $("#guess").html("<b>Power 3</b>");
+       
+        flipThatCoin(2);
+    });
+
+          $("#enemy2").on("click", function() {
+        power3Count++;
+        $("#enemy-image").html(power3Count);
+        $("#guess").html("<b>Power 3</b>");
+       
+        flipThatCoin(2);
+    });
+
+            $("#enemy3").on("click", function() {
+        power3Count++;
+        $("#enemy-image").html(power3Count);
+        $("#guess").html("<b>Power 3</b>");
+       
+        flipThatCoin(2);
+    });
+
+    </script>
+
+  </body>
+
+</html>
