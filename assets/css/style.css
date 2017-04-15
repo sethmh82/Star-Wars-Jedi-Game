@@ -4,6 +4,9 @@ body{
 	margin: 0 auto;
 	vertical-align: middle;
 	font-family: Gotham;
+	background-image: url("../images/bg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #container{
