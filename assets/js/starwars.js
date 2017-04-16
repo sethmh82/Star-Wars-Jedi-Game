@@ -74,7 +74,6 @@
 
 // ATTACK BUTTON
         $("#power1").on("click", function() {
-        $("#power1-chosen").html(headsCount);
         iAmAttacking();
 
     });
@@ -97,7 +96,7 @@
           enemy1Health = 100;
         $("#enemy-image").html("<img class='enemypic' src='assets/images/stormtrooper.gif'>");
         $("#enemy-name").html("<b>Stormtrooper</b>");
-       	$("#enemy-health").html(enemy2Health);
+       	$("#enemy-health").html(enemy1Health);
         document.getElementById("healthBar").style.width = "100%";
     });
         //AT-ST WALKER
@@ -107,7 +106,7 @@
           enemy1Health = 100;
         $("#enemy-image").html("<img class='enemypic' src='assets/images/at-st.gif'>");
         $("#enemy-name").html("<b>AT-ST Walker</b>");
-       	$("#enemy-health").html(enemy3Health);
+       	$("#enemy-health").html(enemy1Health);
         document.getElementById("healthBar").style.width = "100%";
     });
 
