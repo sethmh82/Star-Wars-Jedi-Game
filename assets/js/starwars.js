@@ -47,13 +47,13 @@
 
     function enemyIsAttacking() {
         if (attacking === 1) {
-        var enemyAttack = Math.floor(Math.random()*11);
+        var enemyAttack = Math.floor(Math.random()*10);
         }
         if (attacking === 2) {
-        var enemyAttack = Math.floor(Math.random()*20);
+        var enemyAttack = Math.floor(Math.random()*18);
         }
         if (attacking === 3) {
-        var enemyAttack = Math.floor(Math.random()*8);
+        var enemyAttack = Math.floor(Math.random()*7);
         }
         if (attacking === 4) {
         var enemyAttack = Math.floor(Math.random()*4);
