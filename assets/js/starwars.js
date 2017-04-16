@@ -47,16 +47,16 @@
 
     function enemyIsAttacking() {
         if (attacking === 1) {
-        var enemyAttack = Math.floor(Math.random()*12);
+        var enemyAttack = Math.floor(Math.random()*11);
         }
         if (attacking === 2) {
-        var enemyAttack = Math.floor(Math.random()*22);
+        var enemyAttack = Math.floor(Math.random()*20);
         }
         if (attacking === 3) {
-        var enemyAttack = Math.floor(Math.random()*9);
+        var enemyAttack = Math.floor(Math.random()*8);
         }
         if (attacking === 4) {
-        var enemyAttack = Math.floor(Math.random()*5);
+        var enemyAttack = Math.floor(Math.random()*4);
         }
 
           myHealth = (myHealth - enemyAttack);
