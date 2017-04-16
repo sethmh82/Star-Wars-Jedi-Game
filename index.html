@@ -20,40 +20,22 @@
             <div id="healthOuter"><div id="healthBar"><span id="enemy-health">100</span></div></div>
         </div>
         <div class="top-col">
-            ENEMIES DESTROYED
-            <br>
-            <span id="kills"></span>
+          <div id="enKills">
+            ENEMIES DESTROYED: <span id="kills">0 / 4</span>
+            </div>
         </div>
+
+         <div id="top-col-right">
+             <button id="reset">RESTART GAME</button>
+           </div> 
 </div>
 
 
   <div id="container">
 
-      <div id="col1">
+    <div id="col1">
 
-          <h1>LUKE SKYWALKER</h1>
-
-          <br>
-
-          <img class="my-pic" src="assets/images/luke.gif">
-
-          <br>
-
-      
-
-          <br>
-
-          
-
-          <br>
-
-      </div>
-
-
-
-    <div id="col2">
-
-    <h1>ATTACK THE ENEMY!</h1>
+         <h2>ATTACK THE ENEMY!</h2>
 
         <div id="you-won"></div>
         <br>
@@ -61,21 +43,35 @@
         <br>
         <div id="enemy-image"></div>
         <br>
-        <div id="enemy-name">PICK AN ENEMY TO FIGHT</div>
+        <div id="enemy-name">PICK AN ENEMY TO FIGHT<br><br><span style="font-size:12px;">Select one of the enemies below to fight. Be careful, some enemies are stronger than others. Each time you fight an enemy your attack power will increase so choose wisely.</span> </div>
 
-    <div>
-     
     </div>
+
+
+
+
+      <div id="col2">
+
+          <h1>LUKE SKYWALKER</h1>
+
+          <br>
+
+          <img class="my-pic" src="assets/images/luke.gif">
+      </div>
+
+  </div>
 
 <!-- BOTTOM BAR -->
 
     <div id="bottom-bar">
         
-        <div class="bottom-col">
+        <div id="bottom-col">
         <h4>CHOOSE AN ENEMY TO FIGHT</h4>
           <button id="enemy1">Probe Droid</button>
+          <button id="enemy4">Boba Fett</button>
           <button id="enemy2">Stormtrooper</button>
           <button id="enemy3">AT-ST Walker</button>
+          
         </div>
         <div class="bottom-col-center">
            <img src="assets/images/starwarslogo2.png">
