@@ -4,6 +4,27 @@ body {
 	margin: 0 auto;
 	vertical-align: middle;
 	font-family: Gotham;
+
+	background-image: url(../images/bg1.jpg);
+    background-size: cover;
+   	height: 100vh;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+h1, .h1 {
+	color: #8aec08;
+	font-size: 28px;
+	padding:10px;
+	background-color: rgba(0, 0, 0, 0.45);
+
+}
+h2, .h2 {
+	color: #ff0000;
+	font-size: 22px;
+	padding:10px;
+	background-color: rgba(0, 0, 0, 0.45);
+	
 }
 
 h4, .h4 {
@@ -16,27 +37,29 @@ h4, .h4 {
 #container {
 	width: 100%;
     margin-top: 60px;
-    background-image: url(../images/bg1.jpg);
-    background-size: cover;
-    min-height: 750px;
-    vertical-align: middle;
+
 }
 
 #col1 {
 	float: left;
 	width: 40%;
-	height: 100%vh;
+	height: 65vh;
 	vertical-align: middle;
 	margin-top: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding:20px;
+	background-color: rgba(255, 255, 255, 0.45);
 }
 
 #col2 {
 	float: left;
 	width: 40%;
-	height: 100%vh;
+	height: 65vh;
 	vertical-align: middle;
 	margin-top: 30px;
-	background-color: rgba(255, 255, 255, 0.62);
+	padding:20px;
+	background-color: rgba(255, 255, 255, 0.45);
 }
 
 
@@ -45,7 +68,7 @@ img.enemypic {
 }
 
 img.my-pic {
-	width: 30%;
+	width: 45%;
 }
 
 button {
@@ -54,11 +77,11 @@ button {
     text-transform: uppercase;
     border: 2px solid #eab831;
     font-weight: 600;
-    padding: 6px 10px;
+    padding: 6px 3px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 button.power1{
@@ -72,6 +95,12 @@ button.power1{
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
+}
+
+#top-col-right {
+	float: right;
+	margin-top:15px;
+	margin-right:20px;
 }
 
 #enemy-name {
@@ -108,7 +137,7 @@ color: white;
 	color: #FFF;
 }
 
-.bottom-col {
+#bottom-col {
 	color: #FFF;
 	float: left;
 	width: 40%;
@@ -152,6 +181,10 @@ color: white;
     padding: 4px;
 }
 
+#enKills{
+	margin-top: 12px;
+}
+
 #my-attack{
 	border: 2px solid #eab831;
     padding: 4px 10px 5px;
@@ -161,8 +194,12 @@ color: white;
 }
 
 #kills {
+	margin-top:10px;
+	margin-left:10px;
 	font-size: 16px;
 	font-weight: 900;
+	border:2px solid white;
+	padding:4px;
 }
 
 #enemy-health {
