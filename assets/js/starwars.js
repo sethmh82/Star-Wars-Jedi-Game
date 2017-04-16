@@ -64,8 +64,8 @@
               document.getElementById("myHealthBar").style.width = ("0%");
               $("#my-health").html("0");
               $("#you-won").html("<h1>YOU LOST</h1><br><h2>You were defeated by the enemy</h2>");
-              document.getElementById("my-attack").style.opacity = "0";
-              document.getElementById("power1").style.opacity = "0";
+              document.getElementById("my-attack").style.display = "none";
+              document.getElementById("power1").style.display = "none";
               document.getElementById("you-won").style.background = "red";
               document.getElementById("you-won").style.padding = "30px";
               document.getElementById("enemy-image").style.display = "none";
