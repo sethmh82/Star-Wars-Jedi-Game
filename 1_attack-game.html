@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Star Wars Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link="assets/style.css" rel="css"
   </head>
   <body>
 
@@ -21,21 +20,17 @@
     <button id="enemy2">Stormtrooper</button>
     <button id="enemy3">AT-ST Walker</button>
 
-    <button id="power1">Power1</button>
-    <button id="power2">Power2</button>
-    <button id="power3">Power3</button>
+   
 
     <br>
 
-    <div> You attacked with:
+    <div>
       <span id="power"></span>
     </div>
 
     <br>
 
     MY HEALTH: <div id="my-health">100</div>
-
-    <br>
 
     
 
@@ -85,6 +80,14 @@
     ENEMY IMAGE: <div id="enemy-image"></div>
     <br>
     ENEMY NAME: <div id="enemy-name"></div>
+
+    <div>
+    <h3>CHOOSE YOUR ATTACK POWER<h3>
+    <div>
+
+    <button id="power1">Power1</button>
+    <button id="power2">Power2</button>
+    <button id="power3">Power3</button>
 
     </div>
     </div>
@@ -159,13 +162,13 @@
 
 
       if (randomNumber === 0) {
-          $("#enemy-image").html("<img src='assets/images/at-st.gif'>");
+          $("#enemy-image").html("<img class='enemypic' src='assets/images/at-st.gif'>");
            $("#rand-num").html(randomNumber);
         } else if (randomNumber === 1) {
-          $("#enemy-image").html("<img src='assets/images/boba-fett.gif'>");
+          $("#enemy-image").html("<img class='enemypic' src='assets/images/boba-fett.gif'>");
            $("#rand-num").html(randomNumber);
         } else if (randomNumber === 2) {
-          $("#enemy-image").html("<img src='assets/images/probe.gif'>");
+          $("#enemy-image").html("<img class='enemypic' src='assets/images/probe.gif'>");
            $("#rand-num").html(randomNumber);
         }
 
@@ -215,7 +218,7 @@
 
         $("#enemy1").on("click", function() {
         //power3Count++;
-        $("#enemy-image").html("<img src='assets/images/probe.gif'>");
+        $("#enemy-image").html("<img class='enemypic' src='assets/images/probe.gif'>");
         $("#enemy-name").html("<b>Probe</b>");
        	$("#enemy-health").html(enemy1Health);
         //flipThatCoin(2);
@@ -223,7 +226,7 @@
 
         $("#enemy2").on("click", function() {
         //power3Count++;
-        $("#enemy-image").html("<img src='assets/images/stormtrooper.gif'>");
+        $("#enemy-image").html("<img class='enemypic' src='assets/images/stormtrooper.gif'>");
         $("#enemy-name").html("<b>Stormtrooper</b>");
        	$("#enemy-health").html(enemy1Health);
         //flipThatCoin(2);
@@ -231,7 +234,7 @@
 
         $("#enemy3").on("click", function() {
         //power3Count++;
-        $("#enemy-image").html("<img src='assets/images/at-st.gif'>");
+        $("#enemy-image").html("<img class='enemypic' src='assets/images/at-st.gif'>");
         $("#enemy-name").html("<b>AT-ST Walker</b>");
        	$("#enemy-health").html(enemy1Health);
         //flipThatCoin(2);

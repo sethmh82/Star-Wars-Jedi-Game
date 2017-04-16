@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
 
+    <meta charset="UTF-8">
+    <title>Star Wars Game</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+</head>
+<body>
+
+<div id="top-bar">
+        <div class="top-col">
+            MY HEALTH
+            <div id="myHealthOuter"><div id="myHealthBar"><span id="my-health">100</span></div></div>   
+        </div>
+        <div class="top-col">
+            ENEMY HEALTH
+            <div id="healthOuter"><div id="healthBar"><span id="enemy-health">100</span></div></div>
+        </div>
+        <div class="top-col">
+            ENEMIES DESTROYED
+            <br>
+            <span id="kills"></span>
+        </div>
+</div>
+
+
+  <div id="container">
+
+      <div id="col1">
+
+          <h1>LUKE SKYWALKER</h1>
+
+          <br>
+
+          <img class="my-pic" src="assets/images/luke.gif">
+
+          <br>
+
+      
+
+          <br>
+
+          
+
+          <br>
+
+      </div>
+
+
+
+    <div id="col2">
+
+    <h1>ATTACK THE ENEMY!</h1>
+
+        <div id="you-won"></div>
+        <br>
+        <div id="enemy-attack"></div>
+        <br>
+        <div id="enemy-image"></div>
+        <br>
+        <div id="enemy-name">PICK AN ENEMY TO FIGHT</div>
+
+    <div>
+     
+    </div>
+
+<!-- BOTTOM BAR -->
+
+    <div id="bottom-bar">
+        
+        <div class="bottom-col">
+        <h4>CHOOSE AN ENEMY TO FIGHT</h4>
+          <button id="enemy1">Probe Droid</button>
+          <button id="enemy2">Stormtrooper</button>
+          <button id="enemy3">AT-ST Walker</button>
+        </div>
+        <div class="bottom-col-center">
+           <img src="assets/images/starwarslogo2.png">
+        </div>
+        <div class="bottom-col-right">
+          <button id="power1">ATTACK THE ENEMY</button>
+          <span id="my-attack">1</span>
+          <!--
+          <button id="power2">Power2</button>
+          <button id="power3">Power3</button>
+          -->
+        </div>
+</div>
+
+<!-- SCRIPT LINKS -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/js/starwars.js"></script>
+
+  </body>
+
+</html>
