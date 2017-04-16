@@ -1,42 +1,12 @@
-    var headsCount = 0;
-    var tailsCount = 0;
-    var power3Count = 0;
-    var wins = 0;
-    var losses = 0;
-    var myHealth = 100;
-    var enemy1Health = 100;
-    var enemy2Health = 100;
-    var enemy3Health = 100;
-    var enemiesKilled = 0;
-    var attackPower1 = 1;
-    var attackPower2 = 15;
-    var attackPower3 = 30;
-    var enemy1dead = 0;
-    var enemy2dead = 0;
-    var enemy3dead = 0;
-
- function newGame(){
-
-    headsCount = 0,
-    tailsCount = 0,
-    power3Count = 0,
-    wins = 0,
-    losses = 0,
-    myHealth = 100,
+    var myHealth = 100,
     enemy1Health = 100,
-    enemy2Health = 100,
-    enemy3Health = 100,
     enemiesKilled = 0,
     attackPower1 = 1,
-    attackPower2 = 15,
-    attackPower3 = 30,
-    attacking = 0;
-    enemyLoaded = 0;
+    attacking = 0,
+    enemyLoaded = 0,
     enemy1dead = 0,
     enemy2dead = 0,
     enemy3dead = 0;
-
- }
 
     function isGameOver(){
       if (enemiesKilled === 3) {
@@ -46,9 +16,6 @@
       document.getElementById("enemy-image").style.display = "none";
       } 
     }
-
-
-    
 
     function iAmAttacking() {
       isGameOver();
@@ -79,17 +46,15 @@
     }
 
 
-
-
     function enemyIsAttacking() {
         if (attacking === 1) {
-        var enemyAttack = Math.floor(Math.random()*10);
+        var enemyAttack = Math.floor(Math.random()*19);
         }
         if (attacking === 2) {
-        var enemyAttack = Math.floor(Math.random()*18);
+        var enemyAttack = Math.floor(Math.random()*27);
         }
         if (attacking === 3) {
-        var enemyAttack = Math.floor(Math.random()*7);
+        var enemyAttack = Math.floor(Math.random()*12);
         }
 
           myHealth = (myHealth - enemyAttack);
@@ -107,25 +72,12 @@
     	
     }
 
-
-// CHOOSING AN ATTACK POWER
+// ATTACK BUTTON
         $("#power1").on("click", function() {
         $("#power1-chosen").html(headsCount);
         iAmAttacking();
 
     });
-
-/*
-        $("#power2").on("click", function() {
-       // tailsCount++;
-        $("#power2-chosen").html(tailsCount);
-        $("#power-used").html("<b>YOU USED: POWER 2</b>");
-        iAmAttacking2();
-        attackEnemy();
-        attackPower1-5;
-    });
-*/
-
 
 // CHOOSING AN ENEMY
 
