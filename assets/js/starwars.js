@@ -48,10 +48,10 @@
 
     function enemyIsAttacking() {
         if (attacking === 1) {
-        var enemyAttack = Math.floor(Math.random()*16);
+        var enemyAttack = Math.floor(Math.random()*14);
         }
         if (attacking === 2) {
-        var enemyAttack = Math.floor(Math.random()*24);
+        var enemyAttack = Math.floor(Math.random()*22);
         }
         if (attacking === 3) {
         var enemyAttack = Math.floor(Math.random()*7);
