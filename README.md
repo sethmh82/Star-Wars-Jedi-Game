@@ -2,4 +2,4 @@
 Star Wars Jedi Game | Play Game Here:
 
 
-<img src="https://github.com/sethmh82/Star-Wars-Jedi-Game/starwars.JPG" height="600" />
+<img src="https://github.com/sethmh82/Star-Wars-Jedi-Game/blob/master/starwars.JPG" height="600" />
